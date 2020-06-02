@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Agile Demo</title>
+    <meta name="author" content="Ramsin Khoshabeh">
+    <meta name="description" content="A Place to Call Home">
+
+    <link rel="stylesheet" type="text/css" href="css/lp.css">
+  </head>
+  <body>
+    <nav>
+    <label class="logo">    SummyBuddy</label>
+    <ul>
+      <li><a href="/feature">Features</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/sign">Learn </a></li>
+    </ul>
+    </nav>
+  </body>
+  <section>
+
+    <p> Welcome to the landing page of
+      SummyBuddy here you will learn more
+      about the product
+    </p>
+
+    <div class='metric'>
+      <h1 data-count='0' id='users'> 12</h1>
+      <div> Registered Users </div>
+    </div>
+
+    <div class='metric'>
+      <h1 progress-count='0' id='progress'> 12</h1>
+      <div> Current project progress out of S10</div>
+    </div>
+
+    <table class='margin-top-xl'>
+            <thead>
+              <tr>
+                <th class='small'> First Name </th>
+                <th class='medium'> Last Name </th>
+                <th class='large'> Email </th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for news in news %}
+              <tr>
+                <td> {{news[0]}} </td>
+                <td> {{news[1]}} </td>
+                <td> {{news[2]}} </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+</html>

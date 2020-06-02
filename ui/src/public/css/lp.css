@@ -1,0 +1,126 @@
+
+:root {
+--dark-color: rgba(104, 109, 115, 1);
+--dark-color-alt: rgba(156, 160, 165, 1);
+--medium-color: #bbb;
+--light-color: #eee;
+--page-color: #fafafa;
+--soft-color: rgba(221, 214, 212, 1);
+--padding-med: 0.66rem;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial;
+}
+nav{
+  background: #4B0082;
+  height:90px;
+  width: 100%
+}
+label.logo
+{
+  color:white;
+  font-size:38px;
+  line-height:90px;
+  padding:30px;
+  font-weight:bold;
+}
+
+nav ul{
+  float:right;
+  margin-right:20px;
+}
+
+nav ul li{
+  display:inline-block;
+  line-height: 80px;
+}
+
+nav ul li a{
+  color:white;
+  font-size:17px;
+  padding: 7px 13px;
+  text-transform:uppercase;
+}
+
+a:hover{
+  background: #1b9bff;
+  transition:0.1s
+}
+
+p{
+  font-size: calc(0.8rem + 1vw);
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top:40px;
+  width: 300px;
+  height:300px;
+}
+
+.metric{
+  border: 3px solid #999;
+  display: inline-flex;
+  padding: 2rem;
+  font-family: sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px HSLA(227, 91%, 79%, 0.3);
+
+  h1{
+    margin: 0px;
+    font-size: 5rem;
+
+    &::before{
+      content: attr(data_count);
+    }
+  }
+}
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  margin: 0;
+  padding: 5px;
+  border: 6px solid mediumturquoise;
+  font: 28px "Marker Felt", "Zapfino", cursive;
+}
+
+
+.h{
+  font-size:3px;
+}
+
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  background: var(--dark-color-alt);
+  color: #fafafa;
+}
+table th, table td {
+  margin: 0px;
+  text-align: left;
+  padding: var(--padding-med);
+  border: 1px solid var(--dark-color);
+}
+table tr:nth-child(odd) {
+  background-color: var(--light-color);
+}
